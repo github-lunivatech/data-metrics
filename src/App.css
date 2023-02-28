@@ -1,0 +1,282 @@
+/* @import '~antd/dist/antd.css'; */
+
+/* :root {
+  --primary: #e95b29;
+  --secondary: #195eb8;
+  --primaryBackground: #f0f0f0;
+  --secondaryBackground: #fefefe;
+} */
+.ant-layout-content {
+  background-color: var(--primaryBackground);
+}
+
+.btn-primary--outline {
+  background-color: transparent;
+  color: var(--secondary);
+  border-radius: 3px !important;
+  min-height: 30PX;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  border: 1px solid var(--secondary);
+}
+
+.btn-primary--outline:hover {
+  background-color: var(--secondary);
+  color: #fefefe;
+  border: 1px solid var(--secondary);
+}
+
+.ant-menu-submenu-arrow::before,
+.ant-menu-submenu-arrow::after {
+  background-color: var(--primary);
+}
+
+.ant-menu-item a:hover,
+.ant-menu-light .ant-menu-item:hover,
+.ant-menu-light .ant-menu-item-active,
+.ant-menu-item {
+  color: var(--primary);
+}
+
+.ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  color: var(--primary);
+}
+
+/* .ant-input:focus, .ant-input-focused{
+  border-color: var(--primary);
+  box-shadow:  0 0 0 2px rgba(123, 124, 126, 0.123);
+}
+.ant-input:hover {
+  border-color: var(--primary);
+} */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  color: #232324;
+  font-size: 36px;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+h2 {
+  color: var(--primary);
+}
+
+h4 {
+  color: var(--primary);
+}
+
+.pageTtitle {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: var(--titleTxt);
+}
+@media only screen and (max-width: 480px) {
+  .pageTtitle {
+    font-size: 20px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .pageTtitle {
+    font-size: 24px !important;
+    margin-bottom: 4px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pageTtitle {
+    font-size: 25px !important;
+    margin-bottom: 4px;
+  }
+}
+a {
+  color: var(--primary);
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1.2);
+  }
+
+  60% {
+    transform: scale(0.9);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.fallback-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.fallback-container img {
+  width: 80px;
+  animation: beat 900ms infinite;
+}
+
+.tableisRes {
+  overflow: auto;
+  background-color: #fefefe;
+  box-shadow: 0 2px 22px 0 rgba(31, 38, 135, 0.10);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+}
+
+.tableWidth {
+  overflow-x: scroll;
+  -ms-overflow-style: hidden;
+  scrollbar-width: none;
+}
+
+.tableWidth::-webkit-scrollbar {
+  display: none;
+}
+
+.printBtncontainer {
+  display: flex;
+  background-color: #fefefe;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.maiTopContainer {
+  background: var(--cardColor);
+  box-shadow: 0 2px 22px 0 rgb(31 38 135 / 20%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.financeCards {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 22px 0 rgb(31 38 135 / 20%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 30px;
+  padding: 5px 8px;
+  /* width: 100%;
+  height: 100%; */
+
+}
+
+.financeCards h3 {
+  border-bottom: 1px solid #c6c6cb;
+}
+
+@media(max-width: 576px) {
+  .ant-picker-panels {
+    flex-direction: column;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb8f;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: 80px 0;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.allStat div {
+  padding-bottom: 5px;
+}
+.csvbutton{
+    background-color: var(--primary);
+    color: #fefefe;
+    border-radius: 3px !important;
+    width: auto;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 0 10px;
+    letter-spacing: 1px;
+    justify-content: center;
+    font-weight: 400;
+    border: 1px solid var(--primary);
+    /* box-shadow: 0 4px 14px 0 rgb(0 118 255 / 19%); */
+}
+.icon-file::before{
+  margin-right: 4px;
+}
+
+.ant-input-group-wrapper{
+  width: 100% !important;
+}

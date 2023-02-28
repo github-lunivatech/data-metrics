@@ -1,0 +1,41 @@
+export const chData = [{
+    "date": "2021-05-25",
+    "plottedSd": "50",
+    "averageValue": "30",
+    "c1sd": "5",
+    "c2sd": "10",
+    "c1sdmin": "15",
+    "c2sdmin": "15"
+}, {
+    "date": "2021-05-26",
+    "plottedSd": "30",
+    "averageValue": "30",
+    "c1sd": "5",
+    "c2sd": "10",
+    "c1sdmin": "15",
+    "c2sdmin": "15"
+}, {
+    "date": "2021-05-30",
+    "plottedSd": "65",
+    "averageValue": "30",
+    "c1sd": "5",
+    "c2sd": "10",
+    "c1sdmin": "15",
+    "c2sdmin": "15"
+}, {
+    "date": "2022-06-28",
+    "plottedSd": "65",
+    "averageValue": "30",
+    "c1sd": "5",
+    "c2sd": "10",
+    "c1sdmin": "15",
+    "c2sdmin": "15"
+}, {
+    "date": "2022-06-28",
+    "plottedSd": "100",
+    "averageValue": "30",
+    "c1sd": "5",
+    "c2sd": "10",
+    "c1sdmin": "15",
+    "c2sdmin": "15"
+}]
