@@ -1,0 +1,160 @@
+@import '~antd/dist/antd.css';
+
+
+body {
+  margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*css for modal for test*/
+.panelClass, .groupHead {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.panelClass {
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.testTable {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+
+.subTestClass>td:first-child {
+  padding-left: 15px;
+}
+
+.testNameHead{
+  width: 25%;
+}
+.testNameResult{
+  width: 15%;
+}
+.testNameUnit{
+  width: 10%;
+}
+.testNameRange{
+  width: 15%;
+}
+.testNameNote{
+  width: 25%;
+}
+.testNameAction{
+  width: 6%;
+}
+/*css for modal for test*/
+
+/*all call*/
+.redback, .qcback {
+  background-color: #ff726f;
+  color: #fff;
+}
+.redback:hover, .qcback:hover, .calback:hover {
+  /* background-color: #ff726f; */
+  color: #000;
+}
+.repeatback {
+  background-color: #a7d8de;
+}
+.rbback {
+  background-color: #fde9b0;
+}
+.calback{
+  background-color: #6a5445;
+  color: #fff;
+}
+.low {
+  background-color: rgb(138, 133, 133);
+}
+.high {
+  background-color: rgb(94, 54, 54);
+}
+.inputter input {
+  width: 100%;
+}
+.label-block>div {
+  display: block;
+  margin-bottom: 0px;
+}
+.topTable {
+  width: 100%;
+}
+.topTable td {
+  display: flex;
+  gap: 50%;
+}
+/* .left-col {
+  display: table;
+} */
+.panelHead {
+  background: gray;
+  text-align: center;
+}
+.left-col>div {
+  display: table;
+}
+.ledt-coller{
+  float:left;
+  display:table-cell;
+  margin-right:30px;
+  /* height:100%;    
+  width:25%;
+  background: pink;
+  box-sizing: border-box; */
+}
+.right-coller {
+  float:left;
+  display:table-cell;
+  /* height:100%;
+  width:25%;
+  background: blue;
+  box-sizing: border-box; */
+}
+.panelFoot {
+    border: 2px dashed #444;
+    height: 125px;
+    
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    
+    /* just for demo */
+    min-width: 612px;
+}
+
+.box1, .box2, .box3, .box4 {
+    width: 150px;
+    height: 125px;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+}
+.panelFoot:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+.box1, .box3 {
+    background: #ccc
+}
+.box2, .box4 {
+    background: #0ff
+}
+

@@ -1,0 +1,160 @@
+/* Styles go here */
+
+body {
+  line-height: 1.1;
+}
+
+.page-content {
+  line-height: 1.5;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.headerHTML {
+  text-align: center;
+  width: 98%;
+  min-height: 38%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.page-header,
+.page-header-space {
+  height: 230px;
+  min-height: 230px;
+  padding-bottom: 15px;
+}
+
+.report-header {
+  height: 240px;
+  min-height: 240px;
+}
+
+.report-footer {
+  height: 115px;
+}
+
+.page-footer,
+.page-footer-space {
+  height: 110px;
+  padding-top: 10px;
+
+}
+
+.title-header {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.contact-header {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.title-panel {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.title-group {
+  text-align: left;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+.contact-header .label {
+  width: 100%;
+}
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid black;
+  background: #ffe;
+}
+
+.table-test table td:nth-child(3),
+.table-test table th:nth-child(3) {
+  display: none;
+}
+
+tfoot .TestNote,
+tfoot .SubTestNote,
+tfoot .GroupTestNote {
+  display: none;
+}
+
+.Signature {
+  min-height: 50px;
+}
+
+.note-label {
+  font-weight: bold;
+}
+
+.page-header {
+  position: fixed;
+  top: 0mm;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background: #ffe;
+  padding-bottom: 5px;
+}
+
+.page {
+  page-break-after: always;
+}
+
+.PatientInfo {
+  border: 1px solid #000;
+  border-radius: 25px;
+  background-color: #ffd;
+  padding: 8px;
+  /* width: 97%; */
+}
+
+.main {
+  padding: 0 0 0 0;
+  width: 100%;
+}
+
+@page {
+  size: A4;
+  margin: 11mm 16mm 17mm 17mm;
+}
+
+@media print {
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  .hideOnPrint {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+
+  }
+}
